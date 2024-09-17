@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Fatores de Correção e Cocção</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Fatores de Correção e Cocção</h1>
+    </header>
+    <main>
+        <section id="correcao">
+            <h2>Fator de Correção</h2>
+            <form id="correcaoForm">
+                <label for="pesoBruto">Peso Bruto (g):</label>
+                <input type="number" id="pesoBruto" required>
+                <label for="pesoLiquido">Peso Líquido (g):</label>
+                <input type="number" id="pesoLiquido" required>
+                <button type="button" onclick="calcularCorrecao()">Calcular</button>
+            </form>
+            <p id="resultadoCorrecao"></p>
+        </section>
+        <section id="coccao">
+            <h2>Fator de Cocção</h2>
+            <form id="coccaoForm">
+                <label for="pesoCru">Peso Cru (g):</label>
+                <input type="number" id="pesoCru" required>
+                <label for="pesoCozido">Peso Cozido (g):</label>
+                <input type="number" id="pesoCozido" required>
+                <button type="button" onclick="calcularCoccao()">Calcular</button>
+            </form>
+            <p id="resultadoCoccao"></p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
